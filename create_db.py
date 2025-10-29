@@ -1,0 +1,5 @@
+from models.models import Base
+from db.database import engine
+
+Base.metadata.create_all(bind=engine)
+print("✅ Database tables created!")
